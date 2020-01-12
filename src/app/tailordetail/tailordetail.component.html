@@ -1,0 +1,129 @@
+<br>
+<br>
+<br>
+
+<div class="container" id="product-section">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="assets/images/nature/{{pics}}" alt="{{oneTailor.shopName}}" class="image-responsive"
+        style="width: 550px;" />
+        <button type="button" class="btn btn-danger btn-lg btn-block">Send Message</button>
+    </div>
+
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>{{oneTailor.shopName}}</h1>
+          <span class="badge badge-primary">Master: {{oneTailor.tailorName}}</span>
+          <span class="text-monospace">{{oneTailor.shopNumber}}, {{oneTailor.street}}, {{oneTailor.area}},
+            {{oneTailor.city}}, {{oneTailor.country}}</span>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-description">
+            {{oneTailor.description}}
+          </p>
+        </div>
+      </div><!-- end row -->
+
+      <div class="row">
+        <div class="col-md-2">
+          <h1> <span class="badge badge-success">{{oneTailor.rating}}</span></h1>
+        </div>
+        <div class="col-md-10">
+          <span class="sr-only">Four out of Five Stars</span>
+          <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+          <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+          <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+          <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+          <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+        </div>
+
+      </div><!-- end row -->
+
+      <div class="card card-outline-secondary my-4">
+        <div class="card-header">
+          <h1 class="display-4">Male Dresses</h1>
+        </div>
+        <div class="card-body">
+          <p style="color: blueviolet;">{{oneTailor.maleDress}}</p>
+        </div>
+      </div>
+
+      <div class="card card-outline-secondary my-4">
+        <div class="card-header">
+          <h1 class="display-4">Female Dresses</h1>
+        </div>
+        <div class="card-body">
+          <p style="color: darkorange;">{{oneTailor.femaleDress}}</p>
+        </div>
+      </div>
+
+
+      <div class="card card-outline-secondary my-4">
+        <div class="card-header">
+          <h1 class="display-4">Product Reviews</h1>
+        </div>
+        <div class="card-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique
+            necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia,
+            necessitatibus quae sint natus.</p>
+          <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+          <br>
+          <small class="text-muted">
+            <span class="sr-only">Four out of Five Stars</span>
+            <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+            <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+            <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+            <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+            <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+
+          </small>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique
+            necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia,
+            necessitatibus quae sint natus.</p>
+          <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+          <br>
+          <small class="text-muted">
+            <span class="sr-only">Four out of Five Stars</span>
+            <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+            <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+            <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+            <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+            <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+
+          </small>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique
+            necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia,
+            necessitatibus quae sint natus.</p>
+          <small class="text-muted">Posted by Anonymous on 3/1/17</small>
+          <br>
+          <small class="text-muted">
+            <span class="sr-only">Four out of Five Stars</span>
+            <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+            <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+            <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+            <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+            <span class="fa fa-star fa-2x" aria-hidden="true"></span>
+
+          </small>
+          <hr>
+          <a href="#" class="btn btn-success">Leave a Review</a>
+        </div>
+      </div>
+
+      <p>
+        <a *ngFor="let t of tags" class="btn btn-primary btn-md disabled" role="button" style="margin: 4px"><span
+            style="color:black;">{{t}} </span> </a>
+      </p>
+      
+    </div><!-- end row -->
+
+
+  </div><!-- end container -->
+</div>
